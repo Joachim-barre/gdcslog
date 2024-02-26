@@ -3,7 +3,7 @@ using Godot;
 using System;
 
 [Tool]
-public partial class gdlog : EditorPlugin
+public partial class gdcsharplog : EditorPlugin
 {
 	public override void _EnterTree()
 	{
