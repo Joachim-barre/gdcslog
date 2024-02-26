@@ -2,7 +2,7 @@ using Godot;
 using System.Runtime.CompilerServices;
 using System;
 
-public partial class Logger : Node
+public static class Log
 {
     public enum Severity{
         DEBUG = -1,
