@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://oae2ruhkx71k"]
-
-[ext_resource type="Script" path="res://addons/gdlog/Logger.cs" id="1_ar65s"]
-
-[node name="Logger" type="Node"]
-script = ExtResource("1_ar65s")
