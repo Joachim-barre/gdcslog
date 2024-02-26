@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bwm1caovabefi"]
+[gd_scene format=3 uid="uid://bysapfu5unfti"]
 
-[node name="gdscript_exemple" type="Control"]
+[node name="csharp_exemple" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
