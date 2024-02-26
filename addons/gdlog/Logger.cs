@@ -12,17 +12,17 @@ public partial class Logger : Node
     }
 
 #if DEBUG
-    public Severity LOG_SEVERITY = Severity.DEBUG; 
+    public static Severity LOG_SEVERITY = Severity.DEBUG; 
 #else
-    public Severity LOG_SEVERITY = Severity.WARN;
+    public static Severity LOG_SEVERITY = Severity.WARN;
 #endif
 
-    public readonly Severity DEBUG = Severity.DEBUG;
-    public readonly Severity INFO = Severity.INFO;
-    public readonly Severity WARN = Severity.WARN;
-    public readonly Severity ERROR = Severity.ERROR;
+    public static readonly Severity DEBUG = Severity.DEBUG;
+    public static readonly Severity INFO = Severity.INFO;
+    public static readonly Severity WARN = Severity.WARN;
+    public static readonly Severity ERROR = Severity.ERROR;
 
-    public void log (Variant _m, Severity _s = Severity.DEBUG,
+    public static void log (Variant _m, Severity _s = Severity.DEBUG,
         [CallerLineNumber] int lineNumber = 0,
         [CallerMemberName] string caller = "",
         [CallerFilePath] string callingFilePath = ""){
@@ -53,28 +53,28 @@ public partial class Logger : Node
         }
     }
 
-    public void dbg(Variant _m,
+    public static void dbg(Variant _m,
         [CallerLineNumber] int lineNumber = 0,
         [CallerMemberName] string caller = "",
         [CallerFilePath] string callingFilePath = ""){
         log(_m, Severity.DEBUG, lineNumber, caller, callingFilePath);
     }
 
-    public void info(Variant _m,
+    public static void info(Variant _m,
         [CallerLineNumber] int lineNumber = 0,
         [CallerMemberName] string caller = "",
         [CallerFilePath] string callingFilePath = ""){
         log(_m, Severity.INFO, lineNumber, caller, callingFilePath);
     }
 
-    public void warn(Variant _m,
+    public static void warn(Variant _m,
         [CallerLineNumber] int lineNumber = 0,
         [CallerMemberName] string caller = "",
         [CallerFilePath] string callingFilePath = ""){
         log(_m, Severity.WARN, lineNumber, caller, callingFilePath);
     }
 
-    public void error(Variant _m,
+    public static void error(Variant _m,
         [CallerLineNumber] int lineNumber = 0,
         [CallerMemberName] string caller = "",
         [CallerFilePath] string callingFilePath = ""){
